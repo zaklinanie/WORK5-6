@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript для новичков</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</head>
+<body>
+        
+
+<main>
+    <div class="container">
+        <div class="header">
+            <div class="desktop-menu">
+            <ul>
+            <li><a href="#option">Особенности</a></l>
+            <li><a href="#func">Применение</a></li>
+            </ul>
+            </div>
+            <script>const savedName = localStorage.getItem('username');
+                if (savedName) {
+                const header = document.querySelector(".header");
+                const username = document.createElement('span');
+                username.textContent = savedName;
+                header.appendChild(username);
+                }
+            </script>
+    
+            <nav class="nav">
+                <input class="nav__check" type="checkbox" id="showmenu"/>
+                <label class="nav__showmenu" for="showmenu">&#9776;</label>
+                <label class="nav__back" for="showmenu"></label>
+                <ul class="menu">
+                <li><a class="menu__item" href="#option">Особенности</a></li>
+                <li><a class="menu__item" href="#func">Применение</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+            <h2 id="popup-title"></h2>
+            <p id="popup-desc"></p>
+            <p id="popup-rez"></p>
+            <button id="popup-btn" onclick="runTask()">Запустить</button>
+            <div class="qwe"></div>
+            <div class="timer"></div>
+            <div class="close-btn" onclick="hidesPopup()">X</div>
+            </div>
+        </div>
+        <div class="content">
+            <section>
+                <h2>Что такое JavaScript?</h2>
+                <a id="option"></a>
+                <p class="one">JavaScript - это язык программирования, который используется для создания интерактивных веб-сайтов и приложений. 
+                <br>С помощью JavaScript можно добавлять динамику на статические веб-страницы и обрабатывать пользовательский ввод.</p>
+            </section>
+            <section>
+                <h2></p> Какие возможности есть у JavaScript?</h2>
+                    <ul>
+                        <li>Cоздание интерактивных элементов на странице</li>
+                        <li>Обработка пользовательских действий (например, нажатие на кнопку)</li>
+                        <li>Валидация форм и проверка введенных данных</li>
+                        <li>Анимация элементов</li>
+                        <li>Использование AJAX для загрузки данных асинхронно без перезагрузки страницы</li>
+                        <li>Работа с графикой</li>
+                        <li>Работа с базами данных</li>
+                    </ul>
+            </section>
+            <section>
+                <a id="func"></a>
+                <h2>Когда не стоит использовать JavaScript?</h2>
+                <p class="two">Когда на сайте нет сложной логики и взаимодействия с пользователем. Например, в случае статического сайта-визитки или лендинга.</p>
+            </section>
+            <section>
+                <h2>Демонстрация возможностей JavaScript</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <span>Приветствие.</span>
+                            <p>Представьтесь, пожалуйста, чтобы мы могли обращаться к Вам по имени на протяжении всей работы со страницей.</p>
+                            <button onclick="showPopup('task0')">Поприветствовать</button>
+                        </li>
+                        <li>
+                            <span>Площадь треугольника.</span>
+                            <p>Введите основание и высоту треугольника для поиска его площади.</p>
+                            <button onclick="showPopup('task1')">Посчитать площадь</button>
+                        </li>
+                        <li>
+                            <span>Сравнение строк</span>
+                            <p>Введите 2 различные строки для сравнения количества символов. Если количество совпало, будет выведено true, в противном случае false.</p>
+                            <button onclick="showPopup('task2')">Сравнить строки</button>
+                        </li>
+                        <li>
+                            <span>Поиск минимума и максимума в массиве</span>
+                            <p>Введите массив из 5 элементов для поиска минимального и максимального значения массива.</p>
+                            <button onclick="showPopup('task3')">Найти минимум и максимум</button>
+                        </li>
+                        <li>
+                            <span>Таймер</span>
+                            <p>Функции таймера: начать отсчет, остановить отсчет, посмотреть сколько времени прошло между стартом и финишем.</p>
+                            <button onclick="showPopup('task4')">Запустить таймер</button>
+                        </li>
+                        <li>
+                            <span>Тестирование</span>
+                            <p>Пройдите тест из 10 вопросов по JavaScript. После прохождения будет доступен результат и ответы на вопросы с указанием "верно/неверно".</p>
+                            <button onclick="showPopup('task5')">Начать тестирование</button>
+                        </li>
+                        <li>
+                            <span>Заставка</span>
+                            <p>При нажатии на кнопку появляется заставка на весь экран с красивым фоном, текущей датой и именем пользователя. </p>
+                            <button onclick="showPopup('task6')">Показать заставку</button>
+                        </li>
+                    </u>
+                </nav>
+            </section>
+        </div>
+        <div class ="footer">
+            <p>© 2023 JavaScript для новичков</p>
+        </div>
+    </div>
+</main>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
