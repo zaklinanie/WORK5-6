@@ -190,7 +190,7 @@ switch (taskId) {
       popup2.style.display = "none";
 
       element.style.width = "100vw";
-      element.style.height = "95vh";
+      element.style.height = "90vh";
 
     } ;  break;
 
