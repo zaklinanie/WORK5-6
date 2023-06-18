@@ -219,7 +219,7 @@ body {
     .popup {
         background-color: #fff;
         padding: 45px;
-        margin: 45px;
+        margin: 15px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         animation-name: popup;
