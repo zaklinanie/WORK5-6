@@ -194,7 +194,7 @@ body {
         margin: 20px!important;
         width: auto;
         height: 80%;
-        overflow: auto; }
+        overflow: scroll !important;}
 
 
     .menu__item {  
@@ -256,8 +256,8 @@ body {
     
     .close-btn {
         position: absolute;
-        top: -15px;
-        right: -15px;
+        top: 20px;
+        right: 15px;
         width: 30px;
         height: 30px;
         background-color: #fff;
