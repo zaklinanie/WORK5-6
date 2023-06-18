@@ -210,6 +210,8 @@ switch (taskId) {
   overlay.style.display = "none";
   const result = document.querySelector(".qwe");
   result.innerText = "";
+  const timer = document.querySelector(".timer");
+  timer.textContent = '';
   let element = document.getElementById("popup");
   element.style.backgroundImage = "none";
     element.style.width = "auto";
