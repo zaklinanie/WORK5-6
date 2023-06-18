@@ -206,7 +206,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        padding:20px;
+        padding:10px;
         width: 97%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
@@ -221,9 +221,10 @@ body {
         padding-left: 45px;
         padding-right: 45px;
         padding-bottom: 10px;
+        padding-top: 20px;
         margin: 10px;
         width: auto;
-        max-height: 70%;
+
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         animation-name: popup;
